@@ -1,24 +1,26 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
+import { faUsers, faChartLine, faArrowRight, faEllipsisV } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 class Menu extends Component {
   render() {
     return(
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ftco-navbar-light" id="ftco-navbar">
-	    <div class="container d-flex align-items-center">
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-	        <span class="oi oi-menu"></span> Menu
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark ftco-navbar-light" id="ftco-navbar">
+	    <div className="container d-flex align-items-center">
+				<button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <FontAwesomeIcon icon={faEllipsisV} /> Menu
 	      </button>
-	      {/* <form action="#" class="searchform order-lg-last">
-          <div class="form-group d-flex">
-            <input type="text" class="form-control pl-3" placeholder="Search" />
-            <button type="submit" placeholder="" class="form-control search">
+	      {/* <form action="#" className="searchform order-lg-last">
+          <div className="form-group d-flex">
+            <input type="text" className="form-control pl-3" placeholder="Search" />
+            <button type="submit" placeholder="" className="form-control search">
               <FontAwesomeIcon icon={faSearch} />
             </button>
           </div>
         </form> */}
-	      <div class="collapse navbar-collapse" id="ftco-nav">
-	        <ul class="navbar-nav mr-auto">
+	      <div className="collapse navbar-collapse" id="ftco-nav">
+	        <ul className="navbar-nav mr-auto">
             <li className={window.location.pathname.includes('/home') ? 'nav-item active' : 'nav-item'}>
               {/* <Link
                 to='/home'

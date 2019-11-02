@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { faPaperPlane, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 class Header extends Component {
   render() {

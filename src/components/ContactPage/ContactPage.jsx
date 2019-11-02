@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import Bg1 from  './../../images/bg_1.jpg';
-import About from './../../images/about.jpg';
-import Bg3 from  './../../images/bg_3.jpg';
-import Project1 from './../../images/project-2.jpg';
-import Person1 from './../../images/person_1.jpg';
-import OurClientsSay from '../OurClientsSay/OurClientsSay';
+// import About from './../../images/about.jpg';
+// import Bg3 from  './../../images/bg_3.jpg';
+// import Project1 from './../../images/project-2.jpg';
+// import Person1 from './../../images/person_1.jpg';
+// import OurClientsSay from '../OurClientsSay/OurClientsSay';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronRight, faArrowRight, faPhone, faEnvelope, faMap } from '@fortawesome/free-solid-svg-icons';
+import { faChevronRight, faPhone, faEnvelope, faMap } from '@fortawesome/free-solid-svg-icons';
 // import ServicesPage from './ServicesPage';
 class ContactPage extends Component {
   render() {
@@ -26,25 +26,25 @@ class ContactPage extends Component {
       </div>
     </section>
 
-    <section class="ftco-section contact-section">
-      <div class="container">
-        <div class="row d-flex mb-5 contact-info justify-content-center">
-        	<div class="col-md-8">
-        		<div class="row mb-5">
-		          <div class="col-md-4 text-center py-4">
-		          	<div class="icon">
+    <section className="ftco-section contact-section">
+      <div className="container">
+        <div className="row d-flex mb-5 contact-info justify-content-center">
+        	<div className="col-md-8">
+        		<div className="row mb-5">
+		          <div className="col-md-4 text-center py-4">
+		          	<div className="icon">
 		          		<FontAwesomeIcon icon={faMap} ></FontAwesomeIcon>
 		          	</div>
 		            <p><span>Address:</span> 198 West 21th Street, Suite 721 New York NY 10016</p>
 		          </div>
-		          <div class="col-md-4 text-center border-height py-4">
-		          	<div class="icon">
+		          <div className="col-md-4 text-center border-height py-4">
+		          	<div className="icon">
 		          		<FontAwesomeIcon icon={faPhone} />
 		          	</div>
 		            <p><span>Phone:</span> <a href="tel://1234567920">+ 1235 2355 98</a></p>
 		          </div>
-		          <div class="col-md-4 text-center py-4">
-		          	<div class="icon">
+		          <div className="col-md-4 text-center py-4">
+		          	<div className="icon">
 		          		<FontAwesomeIcon icon={faEnvelope} />
 		          	</div>
 		            <p><span>Email:</span> <a href="mailto:info@yoursite.com">info@yoursite.com</a></p>
@@ -52,24 +52,24 @@ class ContactPage extends Component {
 		        </div>
           </div>
         </div>
-        <div class="row block-9 justify-content-center mb-5">
-          <div class="col-md-8 mb-md-5">
-          	<h2 class="text-center">If you got any questions <br />please do not hesitate to send us a message</h2>
-            <form action="#" class="bg-light p-5 contact-form">
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Your Name" />
+        <div className="row block-9 justify-content-center mb-5">
+          <div className="col-md-8 mb-md-5">
+          	<h2 className="text-center">If you got any questions <br />please do not hesitate to send us a message</h2>
+            <form action="#" className="bg-light p-5 contact-form">
+              <div className="form-group">
+                <input type="text" className="form-control" placeholder="Your Name" />
               </div>
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Your Email" />
+              <div className="form-group">
+                <input type="text" className="form-control" placeholder="Your Email" />
               </div>
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Subject" />
+              <div className="form-group">
+                <input type="text" className="form-control" placeholder="Subject" />
               </div>
-              <div class="form-group">
-                <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
+              <div className="form-group">
+                <textarea name="" id="" cols="30" rows="7" className="form-control" placeholder="Message"></textarea>
               </div>
-              <div class="form-group">
-                <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5" />
+              <div className="form-group">
+                <input type="submit" value="Send Message" className="btn btn-primary py-3 px-5" />
               </div>
             </form>
 
@@ -78,11 +78,11 @@ class ContactPage extends Component {
       </div>
     </section>
 
-    <section class="ftco-section ftco-no-pb ftco-no-pt">
-    	<div class="container-fluid px-0">
-    		<div class="row justify-content-center">
-        	<div class="col-md-12">
-        		<div id="map" class="bg-white"></div>
+    <section className="ftco-section ftco-no-pb ftco-no-pt">
+    	<div className="container-fluid px-0">
+    		<div className="row justify-content-center">
+        	<div className="col-md-12">
+        		<div id="map" className="bg-white"></div>
         	</div>
         </div>
     	</div>

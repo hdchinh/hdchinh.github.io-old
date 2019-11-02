@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import Bg1 from  './../../images/bg_1.jpg';
-import About from './../../images/about.jpg';
-import Bg3 from  './../../images/bg_3.jpg';
-import Project1 from './../../images/project-2.jpg';
-import Person1 from './../../images/person_1.jpg';
-import OurClientsSay from '../OurClientsSay/OurClientsSay';
+// import About from './../../images/about.jpg';
+// import Bg3 from  './../../images/bg_3.jpg';
+// import Project1 from './../../images/project-2.jpg';
+// import Person1 from './../../images/person_1.jpg';
+// import OurClientsSay from '../OurClientsSay/OurClientsSay';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronRight, faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import OurServices from '../OurServices/OurServices';
 // import ServicesPage from './ServicesPage';
 class ServicesPage extends Component {

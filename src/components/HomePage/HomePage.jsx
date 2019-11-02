@@ -2,13 +2,13 @@ import React, { Component } from 'react';
 import Bg1 from './../../images/bg_1.jpg';
 import Bg2 from './../../images/bg_2.jpg';
 import Bg3 from './../../images/bg_3.jpg';
-import Img3 from './../../images/image_3.jpg';
+// import Img3 from './../../images/image_3.jpg';
 import Bg5 from  './../../images/bg_5.jpg';
 import Project1 from './../../images/project-1.jpg';
-import Person1 from './../../images/person_1.jpg';
-import Person2 from './../../images/person_1.jpg';
+// import Person1 from './../../images/person_1.jpg';
+// import Person2 from './../../images/person_1.jpg';
 import About from './../../images/about.jpg';
-import { faPaperPlane, faPhone, faUsers, faChartLine, faArrowRight, faQuoteRight } from "@fortawesome/free-solid-svg-icons";
+import { faUsers, faChartLine, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import OurClientsSay from '../OurClientsSay/OurClientsSay';
 
