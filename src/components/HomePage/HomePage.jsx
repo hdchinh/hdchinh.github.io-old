@@ -1,11 +1,21 @@
 import React, { Component } from 'react';
 import Bg1 from './../../images/bg_1.jpg';
 import Bg2 from './../../images/bg_2.jpg';
+import Bg3 from './../../images/bg_3.jpg';
 import Img3 from './../../images/image_3.jpg';
+import Bg5 from  './../../images/bg_5.jpg';
+import Project1 from './../../images/project-1.jpg';
+import Person1 from './../../images/person_1.jpg';
+import Person2 from './../../images/person_1.jpg';
+import About from './../../images/about.jpg';
+import { faPaperPlane, faPhone, faUsers, faChartLine, faArrowRight, faQuoteRight } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import OurClientsSay from '../OurClientsSay/OurClientsSay';
 
 class HomePage extends Component {
   render() {
     return(
+
       <div>
         <section className="home-slider owl-carousel">
       <div className="slider-item" style={{ backgroundImage: "url(" + Bg1 + ")" }}>
@@ -44,8 +54,8 @@ class HomePage extends Component {
 				<div className="row d-flex">
 					<div className="col-md-5 order-md-last wrap-about align-items-stretch">
 						<div className="wrap-about-border ftco-animate">
-							{/* <div className="img" style="background-image: url(images/about.jpg); border"></div> */}
-              <div className="img"></div>
+							<div className="img" style={{ backgroundImage: "url(" + About + ")" }}></div>
+              {/* <div className="img"></div> */}
 
 							<div className="text">
 								<h3>Read Our Success Story for Inspiration</h3>
@@ -61,14 +71,19 @@ class HomePage extends Component {
 						<div className="row mt-5">
 							<div className="col-lg-6">
 								<div className="services active text-center">
-									<div className="icon mt-2 d-flex justify-content-center align-items-center"><span className="flaticon-collaboration"></span></div>
+									<div className="icon mt-2 d-flex justify-content-center align-items-center" >
+										{/* <span className="flaticon-collaboration"></span> */}
+										<FontAwesomeIcon icon={faUsers} size="2x" style={{ color: 'white' }} >/</FontAwesomeIcon>
+									</div>
 									<div className="text media-body">
 										<h3>Organization</h3>
 										<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
 									</div>
 								</div>
 								<div className="services text-center">
-									<div className="icon mt-2 d-flex justify-content-center align-items-center"><span className="flaticon-analysis"></span></div>
+									<div className="icon mt-2 d-flex justify-content-center align-items-center">
+									<FontAwesomeIcon icon={faChartLine} size="2x" style={{ color: '#1b9ce3' }} >/</FontAwesomeIcon>
+									</div>
 									<div className="text media-body">
 										<h3>Risk Analysis</h3>
 										<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
@@ -77,14 +92,17 @@ class HomePage extends Component {
 							</div>
 							<div className="col-lg-6">
 								<div className="services text-center">
-									<div className="icon mt-2 d-flex justify-content-center align-items-center"><span className="flaticon-search-engine"></span></div>
+									<div className="icon mt-2 d-flex justify-content-center align-items-center">
+									<FontAwesomeIcon icon={faChartLine} size="2x" style={{ color: '#1b9ce3' }} />
+									</div>
 									<div className="text media-body">
 										<h3>Marketing Strategy</h3>
 										<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
 									</div>
 								</div>
 								<div className="services text-center">
-									<div className="icon mt-2 d-flex justify-content-center align-items-center"><span className="flaticon-handshake"></span></div>
+									<div className="icon mt-2 d-flex justify-content-center align-items-center">
+									<FontAwesomeIcon icon={faChartLine} size="2x" style={{ color: '#1b9ce3' }} />										</div>
 									<div className="text media-body">
 										<h3>Capital Market</h3>
 										<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
@@ -97,8 +115,8 @@ class HomePage extends Component {
 			</div>
 		</section>
 
-		<section className="ftco-intro ftco-no-pb img">
-		{/* <section className="ftco-intro ftco-no-pb img" style="background-image: url(images/bg_3.jpg);"> */}
+		{/* <section className="ftco-intro ftco-no-pb img"> */}
+		<section className="ftco-intro ftco-no-pb img" style={{ backgroundImage: "url(" + Bg3 + ")" }}>
 
     	<div className="container">
     		<div className="row justify-content-center mb-5">
@@ -167,7 +185,8 @@ class HomePage extends Component {
 				<div className="row no-gutters">
 					<div className="col-lg-4 d-flex">
 						<div className="services-2 noborder-left text-center ftco-animate">
-							<div className="icon mt-2 d-flex justify-content-center align-items-center"><span className="flaticon-analysis"></span></div>
+							<div className="icon mt-2 d-flex justify-content-center align-items-center">
+							<FontAwesomeIcon icon={faChartLine} size="2x" style={{ color: '#1b9ce3' }} />							</div>
 							<div className="text media-body">
 								<h3>Business Analysis</h3>
 								<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
@@ -176,7 +195,8 @@ class HomePage extends Component {
 					</div>
 					<div className="col-lg-4 d-flex">
 						<div className="services-2 text-center ftco-animate">
-							<div className="icon mt-2 d-flex justify-content-center align-items-center"><span className="flaticon-business"></span></div>
+							<div className="icon mt-2 d-flex justify-content-center align-items-center">
+							<FontAwesomeIcon icon={faChartLine} size="2x" style={{ color: '#1b9ce3' }} />							</div>
 							<div className="text media-body">
 								<h3>Business Consulting</h3>
 								<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
@@ -185,7 +205,8 @@ class HomePage extends Component {
 					</div>
 					<div className="col-lg-4 d-flex">
 						<div className="services-2 text-center ftco-animate">
-							<div className="icon mt-2 d-flex justify-content-center align-items-center"><span className="flaticon-insurance"></span></div>
+							<div className="icon mt-2 d-flex justify-content-center align-items-center">
+							<FontAwesomeIcon icon={faChartLine} size="2x" style={{ color: '#1b9ce3' }} />							</div>
 							<div className="text media-body">
 								<h3>Business Insurance</h3>
 								<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
@@ -194,7 +215,8 @@ class HomePage extends Component {
 					</div>
 					<div className="col-lg-4 d-flex">
 						<div className="services-2 noborder-left noborder-bottom text-center ftco-animate">
-							<div className="icon mt-2 d-flex justify-content-center align-items-center"><span className="flaticon-money"></span></div>
+							<div className="icon mt-2 d-flex justify-content-center align-items-center">
+							<FontAwesomeIcon icon={faChartLine} size="2x" style={{ color: '#1b9ce3' }} />							</div>
 							<div className="text media-body">
 								<h3>Global Investigation</h3>
 								<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
@@ -203,7 +225,8 @@ class HomePage extends Component {
 					</div>
 					<div className="col-lg-4 d-flex">
 						<div className="services-2 text-center noborder-bottom ftco-animate">
-							<div className="icon mt-2 d-flex justify-content-center align-items-center"><span className="flaticon-rating"></span></div>
+							<div className="icon mt-2 d-flex justify-content-center align-items-center">
+							<FontAwesomeIcon icon={faChartLine} size="2x" style={{ color: '#1b9ce3' }} />							</div>
 							<div className="text media-body">
 								<h3>Audit &amp; Evaluation</h3>
 								<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
@@ -212,7 +235,8 @@ class HomePage extends Component {
 					</div>
 					<div className="col-lg-4 d-flex">
 						<div className="services-2 text-center noborder-bottom ftco-animate">
-							<div className="icon mt-2 d-flex justify-content-center align-items-center"><span className="flaticon-search-engine"></span></div>
+							<div className="icon mt-2 d-flex justify-content-center align-items-center">
+							<FontAwesomeIcon icon={faChartLine} size="2x" style={{ color: '#1b9ce3' }} />								</div>
 							<div className="text media-body">
 								<h3>Marketing Strategy</h3>
 								<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
@@ -223,8 +247,8 @@ class HomePage extends Component {
 			</div>
 		</section>
 
-		<section className="ftco-intro ftco-no-pb img">
-		{/* <section className="ftco-intro ftco-no-pb img" style="background-image: url(images/bg_3.jpg);"> */}
+		{/* <section className="ftco-intro ftco-no-pb img"> */}
+		<section className="ftco-intro ftco-no-pb img" style={{ backgroundImage: "url(" + Bg3 + ")" }}>
 
     	<div className="container">
     		<div className="row justify-content-center">
@@ -249,11 +273,13 @@ class HomePage extends Component {
         </div>
 				<div className="row no-gutters">
     			<div className="col-md-3">
-    				{/* <div className="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/project-2.jpg);"> */}
-    				<div className="project img ftco-animate d-flex justify-content-center align-items-center">
+    				<div className="project img ftco-animate d-flex justify-content-center align-items-center" style={{ backgroundImage: "url(" + Project1 + ")" }}>
+    				{/* <div className="project img ftco-animate d-flex justify-content-center align-items-center"> */}
 
     					<div className="overlay"></div>
-    					<a href="#" className="btn-site d-flex align-items-center justify-content-center"><span className="icon-subdirectory_arrow_right"></span></a>
+    					<a href="#" className="btn-site d-flex align-items-center justify-content-center">
+							<FontAwesomeIcon icon={faArrowRight} size="lg" style={{ color: 'black' }} />
+							</a>
 	    				<div className="text text-center p-4">
 	    					<h3><a href="#">Branding &amp; Illustration Design</a></h3>
 	    					<span>Web Design</span>
@@ -261,11 +287,13 @@ class HomePage extends Component {
     				</div>
   				</div>
   				<div className="col-md-3">
-    				{/* <div className="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/project-1.jpg);"> */}
-            <div className="project img ftco-animate d-flex justify-content-center align-items-center" >
+    				<div className="project img ftco-animate d-flex justify-content-center align-items-center" style={{ backgroundImage: "url(" + Project1 + ")" }}>
+            {/* <div className="project img ftco-animate d-flex justify-content-center align-items-center" > */}
 
               <div className="overlay"></div>
-    					<a href="#" className="btn-site d-flex align-items-center justify-content-center"><span className="icon-subdirectory_arrow_right"></span></a>
+    					<a href="#" className="btn-site d-flex align-items-center justify-content-center">
+							<FontAwesomeIcon icon={faArrowRight} size="lg" style={{ color: 'black' }} />
+							</a>
 	    				<div className="text text-center p-4">
 	    					<h3><a href="#">Branding &amp; Illustration Design</a></h3>
 	    					<span>Web Design</span>
@@ -274,11 +302,13 @@ class HomePage extends Component {
   				</div>
 
     			<div className="col-md-3">
-    				{/* <div className="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/project-3.jpg);"> */}
-    				<div className="project img ftco-animate d-flex justify-content-center align-items-center">
+    				<div className="project img ftco-animate d-flex justify-content-center align-items-center" style={{ backgroundImage: "url(" + Project1 + ")" }}>
+    				{/* <div className="project img ftco-animate d-flex justify-content-center align-items-center"> */}
 
     					<div className="overlay"></div>
-    					<a href="#" className="btn-site d-flex align-items-center justify-content-center"><span className="icon-subdirectory_arrow_right"></span></a>
+    					<a href="#" className="btn-site d-flex align-items-center justify-content-center">
+							<FontAwesomeIcon icon={faArrowRight} size="lg" style={{ color: 'black' }} />
+							</a>
 	    				<div className="text text-center p-4">
 	    					<h3><a href="#">Branding &amp; Illustration Design</a></h3>
 	    					<span>Web Design</span>
@@ -286,11 +316,13 @@ class HomePage extends Component {
     				</div>
     			</div>
 					<div className="col-md-3">
-    				{/* <div className="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/project-4.jpg);"> */}
-            <div className="project img ftco-animate d-flex justify-content-center align-items-center">
+    				<div className="project img ftco-animate d-flex justify-content-center align-items-center" style={{ backgroundImage: "url(" + Project1 + ")" }}>
+            {/* <div className="project img ftco-animate d-flex justify-content-center align-items-center"> */}
 
               <div className="overlay"></div>
-    					<a href="#" className="btn-site d-flex align-items-center justify-content-center"><span className="icon-subdirectory_arrow_right"></span></a>
+    					<a href="#" className="btn-site d-flex align-items-center justify-content-center">
+							<FontAwesomeIcon icon={faArrowRight} size="lg" style={{ color: 'black' }} />
+								</a>
 	    				<div className="text text-center p-4">
 	    					<h3><a href="#">Branding &amp; Illustration Design</a></h3>
 	    					<span>Web Design</span>
@@ -298,11 +330,13 @@ class HomePage extends Component {
     				</div>
   				</div>
   				<div className="col-md-3">
-          {/* <div className="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/project-5.jpg);"> */}
+          <div className="project img ftco-animate d-flex justify-content-center align-items-center" style={{ backgroundImage: "url(" + Project1 + ")" }}>
 
-    				<div className="project img ftco-animate d-flex justify-content-center align-items-center">
+    				{/* <div className="project img ftco-animate d-flex justify-content-center align-items-center"> */}
     					<div className="overlay"></div>
-    					<a href="#" className="btn-site d-flex align-items-center justify-content-center"><span className="icon-subdirectory_arrow_right"></span></a>
+    					<a href="#" className="btn-site d-flex align-items-center justify-content-center">
+							<FontAwesomeIcon icon={faArrowRight} size="lg" style={{ color: 'black' }} />
+							</a>
 	    				<div className="text text-center p-4">
 	    					<h3><a href="#">Branding &amp; Illustration Design</a></h3>
 	    					<span>Web Design</span>
@@ -310,11 +344,13 @@ class HomePage extends Component {
     				</div>
   				</div>
   				<div className="col-md-3">
-          {/* <div className="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/project-6.jpg);"> */}
+          <div className="project img ftco-animate d-flex justify-content-center align-items-center" style={{ backgroundImage: "url(" + Project1 + ")" }}>
 
-    				<div className="project img ftco-animate d-flex justify-content-center align-items-center">
+    				{/* <div className="project img ftco-animate d-flex justify-content-center align-items-center"> */}
     					<div className="overlay"></div>
-    					<a href="#" className="btn-site d-flex align-items-center justify-content-center"><span className="icon-subdirectory_arrow_right"></span></a>
+    					<a href="#" className="btn-site d-flex align-items-center justify-content-center">
+							<FontAwesomeIcon icon={faArrowRight} size="lg" style={{ color: 'black' }} />
+								</a>
 	    				<div className="text text-center p-4">
 	    					<h3><a href="#">Branding &amp; Illustration Design</a></h3>
 	    					<span>Web Design</span>
@@ -322,11 +358,13 @@ class HomePage extends Component {
     				</div>
   				</div>
   				<div className="col-md-3">
-          {/* <div className="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/project-7.jpg);"> */}
+          <div className="project img ftco-animate d-flex justify-content-center align-items-center" style={{ backgroundImage: "url(" + Project1 + ")" }}>
 
-    				<div className="project img ftco-animate d-flex justify-content-center align-items-center">
+    				{/* <div className="project img ftco-animate d-flex justify-content-center align-items-center"> */}
     					<div className="overlay"></div>
-    					<a href="#" className="btn-site d-flex align-items-center justify-content-center"><span className="icon-subdirectory_arrow_right"></span></a>
+    					<a href="#" className="btn-site d-flex align-items-center justify-content-center">
+							<FontAwesomeIcon icon={faArrowRight} size="lg" style={{ color: 'black' }} />
+							</a>
 	    				<div className="text text-center p-4">
 	    					<h3><a href="#">Branding &amp; Illustration Design</a></h3>
 	    					<span>Web Design</span>
@@ -334,10 +372,12 @@ class HomePage extends Component {
     				</div>
   				</div>
   				<div className="col-md-3">
-          {/* <div className="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/project-8.jpg);" */}
-    				<div className="project img ftco-animate d-flex justify-content-center align-items-center">
+          <div className="project img ftco-animate d-flex justify-content-center align-items-center" style={{ backgroundImage: "url(" + Project1 + ")" }} >
+    				{/* <div className="project img ftco-animate d-flex justify-content-center align-items-center"> */}
     					<div className="overlay"></div>
-    					<a href="#" className="btn-site d-flex align-items-center justify-content-center"><span className="icon-subdirectory_arrow_right"></span></a>
+    					<a href="#" className="btn-site d-flex align-items-center justify-content-center">
+							<FontAwesomeIcon icon={faArrowRight} size="lg" style={{ color: 'black' }} />
+							</a>
 	    				<div className="text text-center p-4">
 	    					<h3><a href="#">Branding &amp; Illustration Design</a></h3>
 	    					<span>Web Design</span>
@@ -349,9 +389,9 @@ class HomePage extends Component {
 		</section>
 
 
-    {/* <section className="ftco-section ftco-consult ftco-no-pt ftco-no-pb" style="background-image: url(images/bg_5.jpg);" data-stellar-background-ratio="0.5"> */}
+    <section className="ftco-section ftco-consult ftco-no-pt ftco-no-pb" style={{ backgroundImage: "url(" + Bg5 + ")" }} data-stellar-background-ratio="0.5">
 
-    <section className="ftco-section ftco-consult ftco-no-pt ftco-no-pb"  data-stellar-background-ratio="0.5">
+    {/* <section className="ftco-section ftco-consult ftco-no-pt ftco-no-pb"  data-stellar-background-ratio="0.5"> */}
     	<div className="overlay"></div>
     	<div className="container">
     		<div className="row justify-content-end">
@@ -364,32 +404,13 @@ class HomePage extends Component {
 		          <form action="#" className="appointment-form ftco-animate">
 		    				<div className="d-md-flex">
 			    				<div className="form-group">
-			    					<input type="text" className="form-control" placeholder="First Name" />
+			    					<input type="text" className="form-control" placeholder="Your Name" />
 			    				</div>
 			    				<div className="form-group ml-md-4">
-			    					<input type="text" className="form-control" placeholder="Last Name" />
+			    					<input type="text" className="form-control" placeholder="Email/Phone" />
 			    				</div>
 		    				</div>
-		    				<div className="d-md-flex">
-		    					<div className="form-group">
-			    					<div className="form-field">
-		        					<div className="select-wrap">
-		                    <div className="icon"><span className="ion-ios-arrow-down"></span></div>
-		                    <select name="" id="" className="form-control">
-		                    	<option value="">Select Guidance</option>
-		                      <option value="">Finance</option>
-		                      <option value="">Business</option>
-		                      <option value="">Auto Loan</option>
-		                      <option value="">Real Estate</option>
-		                      <option value="">Other Services</option>
-		                    </select>
-		                  </div>
-			              </div>
-			    				</div>
-		    					<div className="form-group ml-md-4">
-			    					<input type="text" className="form-control" placeholder="Phone" />
-			    				</div>
-		    				</div>
+
 		    				<div className="d-md-flex">
 		    					<div className="form-group">
 			              <textarea name="" id="" cols="30" rows="2" className="form-control" placeholder="Message"></textarea>
@@ -405,183 +426,7 @@ class HomePage extends Component {
     	</div>
     </section>
 
-		<section className="ftco-section bg-light">
-			<div className="container">
-				<div className="row justify-content-center mb-5 pb-2">
-          <div className="col-md-8 text-center heading-section ftco-animate">
-            <h2 className="mb-4"><span>Recent</span> Blog</h2>
-            <p>Separated they live in. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country</p>
-          </div>
-        </div>
-				<div className="row">
-          <div className="col-md-6 col-lg-4 ftco-animate">
-            <div className="blog-entry">
-            {/* <a href="blog-single.html" className="block-20 d-flex align-items-end" style="background-image: url('images/image_1.jpg');"> */}
-
-              <a href="blog-single.html" className="block-20 d-flex align-items-end">
-								<div className="meta-date text-center p-2">
-                  <span className="day">26</span>
-                  <span className="mos">June</span>
-                  <span className="yr">2019</span>
-                </div>
-              </a>
-              <div className="text bg-white p-4">
-                <h3 className="heading"><a href="#">Finance And Legal Working Streams Occur Throughout</a></h3>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                <div className="d-flex align-items-center mt-4">
-	                <p className="mb-0"><a href="#" className="btn btn-primary">Read More <span className="ion-ios-arrow-round-forward"></span></a></p>
-	                <p className="ml-auto mb-0">
-	                	<a href="#" className="mr-2">Admin</a>
-	                	<a href="#" className="meta-chat"><span className="icon-chat"></span> 3</a>
-	                </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-6 col-lg-4 ftco-animate">
-            <div className="blog-entry">
-            {/* <a href="blog-single.html" className="block-20 d-flex align-items-end" style="background-image: url('images/image_2.jpg');"> */}
-              <a href="blog-single.html" className="block-20 d-flex align-items-end" >
-								<div className="meta-date text-center p-2">
-                  <span className="day">26</span>
-                  <span className="mos">June</span>
-                  <span className="yr">2019</span>
-                </div>
-              </a>
-              <div className="text bg-white p-4">
-                <h3 className="heading"><a href="#">Finance And Legal Working Streams Occur Throughout</a></h3>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                <div className="d-flex align-items-center mt-4">
-	                <p className="mb-0"><a href="#" className="btn btn-primary">Read More <span className="ion-ios-arrow-round-forward"></span></a></p>
-	                <p className="ml-auto mb-0">
-	                	<a href="#" className="mr-2">Admin</a>
-	                	<a href="#" className="meta-chat"><span className="icon-chat"></span> 3</a>
-	                </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-6 col-lg-4 ftco-animate">
-            <div className="blog-entry">
-            <a href="blog-single.html" className="block-20 d-flex align-items-end" style={{ backgroundImage: "url(" + Img3 + ")" }}>
-              {/* <a href="blog-single.html" className="block-20 d-flex align-items-end"> */}
-								<div className="meta-date text-center p-2">
-                  <span className="day">26</span>
-                  <span className="mos">June</span>
-                  <span className="yr">2019</span>
-                </div>
-              </a>
-              <div className="text bg-white p-4">
-                <h3 className="heading"><a href="#">Finance And Legal Working Streams Occur Throughout</a></h3>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                <div className="d-flex align-items-center mt-4">
-	                <p className="mb-0"><a href="#" className="btn btn-primary">Read More <span className="ion-ios-arrow-round-forward"></span></a></p>
-	                <p className="ml-auto mb-0">
-	                	<a href="#" className="mr-2">Admin</a>
-	                	<a href="#" className="meta-chat"><span className="icon-chat"></span> 3</a>
-	                </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-			</div>
-		</section>
-
-		<section className="ftco-section testimony-section">
-      <div className="container">
-        <div className="row justify-content-center mb-5">
-          <div className="col-md-8 text-center heading-section ftco-animate">
-            <h2 className="mb-4">Our Clients Says</h2>
-            <p>Separated they live in. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country</p>
-          </div>
-        </div>
-        <div className="row ftco-animate justify-content-center">
-          <div className="col-md-12">
-            <div className="carousel-testimony owl-carousel">
-              <div className="item">
-                <div className="testimony-wrap d-flex">
-                  <div className="user-img" >
-                  {/* <div className="user-img" style="background-image: url(images/person_1.jpg)"> */}
-
-                  </div>
-                  <div className="text pl-4">
-                  	<span className="quote d-flex align-items-center justify-content-center">
-                      <i className="icon-quote-left"></i>
-                    </span>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <p className="name">Racky Henderson</p>
-                    <span className="position">Father</span>
-                  </div>
-                </div>
-              </div>
-              <div className="item">
-                <div className="testimony-wrap d-flex">
-                  {/* <div className="user-img" style="background-image: url(images/person_2.jpg)"> */}
-                  <div className="user-img">
-                  </div>
-                  <div className="text pl-4">
-                  	<span className="quote d-flex align-items-center justify-content-center">
-                      <i className="icon-quote-left"></i>
-                    </span>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <p className="name">Henry Dee</p>
-                    <span className="position">Businesswoman</span>
-                  </div>
-                </div>
-              </div>
-              <div className="item">
-                <div className="testimony-wrap d-flex">
-                  {/* <div className="user-img" style="background-image: url(images/person_3.jpg)"> */}
-                  <div className="user-img">
-                  </div>
-                  <div className="text pl-4">
-                  	<span className="quote d-flex align-items-center justify-content-center">
-                      <i className="icon-quote-left"></i>
-                    </span>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <p className="name">Mark Huff</p>
-                    <span className="position">Businesswoman</span>
-                  </div>
-                </div>
-              </div>
-              <div className="item">
-                <div className="testimony-wrap d-flex">
-                  <div className="user-img">
-                  {/* <div className="user-img" style="background-image: url(images/person_4.jpg)"> */}
-
-                  </div>
-                  <div className="text pl-4">
-                  	<span className="quote d-flex align-items-center justify-content-center">
-                      <i className="icon-quote-left"></i>
-                    </span>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <p className="name">Rodel Golez</p>
-                    <span className="position">Businesswoman</span>
-                  </div>
-                </div>
-              </div>
-              <div className="item">
-                <div className="testimony-wrap d-flex">
-                  <div className="user-img">
-                  {/* <div className="user-img" style="background-image: url(images/person_1.jpg)"> */}
-
-                  </div>
-                  <div className="text pl-4">
-                  	<span className="quote d-flex align-items-center justify-content-center">
-                      <i className="icon-quote-left"></i>
-                    </span>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <p className="name">Ken Bosh</p>
-                    <span className="position">Businesswoman</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+		<OurClientsSay />
       </div>
     )
   }

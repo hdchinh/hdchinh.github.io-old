@@ -10,7 +10,7 @@ class LandingPageRoute extends Component {
     return (
       <Route {...rest} render={matchProps => (
         <LandingPageLayout>
-          <Component {...matchProps} />
+          <Component {...matchProps} key={Math.random()} />
         </LandingPageLayout>
       )} />
     )

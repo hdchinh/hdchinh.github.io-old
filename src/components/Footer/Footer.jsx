@@ -83,14 +83,14 @@ class Footer extends Component {
               </div>
               <div class="ftco-footer-widget mb-5">
                 <h2 class="ftco-heading-2 mb-0">Connect With Us</h2>
-                <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-3">
+                {/* <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-3">
                   <li class="ftco-animate"><a href="#">
                   <FontAwesomeIcon icon={['fab', 'facebook-f']}  style={{ color: 'white', marginRight: 5 }} />
                     </a></li>
                   <li class="ftco-animate"><a href="#">
                   <FontAwesomeIcon icon={['fab', 'facebook-f']}  style={{ color: 'white', marginRight: 5 }} /></a></li>
                   <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
-                </ul>
+                </ul> */}
               </div>
             </div>
           </div>
@@ -98,7 +98,7 @@ class Footer extends Component {
         <div class="row">
           <div class="col-md-12 text-center">
             <p>
-              Copyright &copy;2019 Coretech | All rights reserved <i class="icon-heart" aria-hidden="true"></i>
+              Copyright &copy;2019 Coretech | All rights reserved.
             </p>
           </div>
         </div>

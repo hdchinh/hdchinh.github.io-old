@@ -19,58 +19,64 @@ class Menu extends Component {
         </form> */}
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <Link
+            <li className={window.location.pathname.includes('/home') ? 'nav-item active' : 'nav-item'}>
+              {/* <Link
                 to='/home'
                 className="nav-link pl-0"
               >
                 Home
-              </Link>
+              </Link> */}
+              <a href='/home' className="nav-link"> Home</a>
             </li>
 
-            <li class="nav-item">
-              <Link
+            <li className={window.location.pathname.includes('/about') ? 'nav-item active' : 'nav-item'}>
+              {/* <Link
                 to='/about'
                 className="nav-link"
               >
                 About
-              </Link>
+              </Link> */}
+              <a href='/about' className="nav-link"> About</a>
             </li>
 
-            <li class="nav-item">
-              <Link
+            <li className={window.location.pathname.includes('/projects') ? 'nav-item active' : 'nav-item'}>
+              {/* <Link
                 to='/projects'
                 className="nav-link"
               >
                 Projects
-              </Link>
+              </Link> */}
+              <a href='/projects' className="nav-link"> Projects</a>
             </li>
 
-            <li class="nav-item">
-              <Link
+            <li className={window.location.pathname.includes('/services') ? 'nav-item active' : 'nav-item'}>
+              {/* <Link
                 to='/services'
                 className="nav-link"
               >
                 Services
-              </Link>
+              </Link> */}
+              <a href='/services' className="nav-link"> Services</a>
             </li>
 
-            <li class="nav-item">
-              <Link
+            <li className={window.location.pathname.includes('/blog') ? 'nav-item active' : 'nav-item'}>
+              {/* <Link
                 to='/blog'
                 className="nav-link"
               >
                 Blog
-              </Link>
+              </Link> */}
+              <a href='/blog' className="nav-link"> Blog</a>
             </li>
 
-            <li class="nav-item">
-              <Link
+            <li className={window.location.pathname.includes('/contact') ? 'nav-item active' : 'nav-item'}>
+              {/* <Link
                 to='/contact'
                 className="nav-link"
               >
                 Contact
-              </Link>
+              </Link> */}
+              <a href='/contact' className="nav-link"> Contact</a>
             </li>
 	        </ul>
 	      </div>

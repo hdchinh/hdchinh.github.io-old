@@ -11,9 +11,10 @@ class Header extends Component {
           <div className="container">
             <div className="row no-gutters d-flex align-items-center align-items-stretch">
               <div className="col-md-4 d-flex align-items-center py-4">
-                <Link to="/" className="navbar-brand">
+                {/* <Link to="/" className="navbar-brand">
                   Consolution
-                </Link>
+                </Link> */}
+                <a href="/home" className="navbar-brand" >Consolution</a>
               </div>
               <div className="col-lg-8 d-block">
                 <div className="row d-flex">
