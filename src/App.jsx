@@ -1,5 +1,5 @@
 import React from "react";
-import { history } from 'helpers/history';
+// import { history } from 'helpers/history';
 import {
   BrowserRouter as Router,
   Switch,
