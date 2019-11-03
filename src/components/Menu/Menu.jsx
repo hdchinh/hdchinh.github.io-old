@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 // import { Link } from 'react-router-dom';
 import { faUsers, faChartLine, faArrowRight, faEllipsisV } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from 'react-router-dom';
 
 class Menu extends Component {
   render() {
@@ -22,23 +23,23 @@ class Menu extends Component {
 	      <div className="collapse navbar-collapse" id="ftco-nav">
 	        <ul className="navbar-nav mr-auto">
             <li className={window.location.pathname.includes('/home') ? 'nav-item active' : 'nav-item'}>
-              {/* <Link
+              <Link
                 to='/home'
                 className="nav-link pl-0"
               >
                 Home
-              </Link> */}
-              <a href='/home' className="nav-link"> Home</a>
+              </Link>
+              {/* <a href='/home' className="nav-link"> Home</a> */}
             </li>
 
             <li className={window.location.pathname.includes('/about') ? 'nav-item active' : 'nav-item'}>
-              {/* <Link
+              <Link
                 to='/about'
                 className="nav-link"
               >
                 About
-              </Link> */}
-              <a href='/about' className="nav-link"> About</a>
+              </Link>
+              {/* <a href='/about' className="nav-link"> About</a> */}
             </li>
 
             <li className={window.location.pathname.includes('/projects') ? 'nav-item active' : 'nav-item'}>
