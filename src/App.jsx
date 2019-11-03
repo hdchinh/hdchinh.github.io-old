@@ -17,7 +17,7 @@ import ProjectsPage from './components/ProjectsPage/ProjectsPage';
 import ServicesPage from './components/ServicesPage/ServicesPage';
 import BlogsPage from './components/BlogsPage/BlogsPage';
 import ContactPage from './components/ContactPage/ContactPage';
-import Menu from 'components/Menu/Menu';
+// import Menu from 'components/Menu/Menu';
 
 class App extends React.Component {
   render() {
