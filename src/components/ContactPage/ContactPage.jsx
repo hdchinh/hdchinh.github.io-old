@@ -78,15 +78,20 @@ class ContactPage extends Component {
       </div>
     </section>
 
-    <section className="ftco-section ftco-no-pb ftco-no-pt">
+{/*
+    <section className="ftco-section ftco-no-pb ftco-no-pt fix-wrong-margin" style={{ backgroundColor: 'red !important' }}>
     	<div className="container-fluid px-0">
     		<div className="row justify-content-center">
         	<div className="col-md-12">
-        		<div id="map" className="bg-white"></div>
+        		<div className="bg-white">
+            <iframe  frameBorder="0"  allowFullScreen="true"  webkitallowfullscreen="true"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.8216450478167!2d106.70789951418291!3d10.824957261257552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175288f04a04e63%3A0xd284e6c3d83967a5!2zQ-G6p3UgQsOsbmggTOG7o2ksIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1572769502417!5m2!1svi!2s" style={{  width: '100%', height: 650, border: 0 }}></iframe>
+            </div>
         	</div>
         </div>
     	</div>
-    </section>
+    </section> */}
+
+     <iframe  frameBorder="0"  allowFullScreen="true"  webkitallowfullscreen="true"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.8216450478167!2d106.70789951418291!3d10.824957261257552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175288f04a04e63%3A0xd284e6c3d83967a5!2zQ-G6p3UgQsOsbmggTOG7o2ksIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1572769502417!5m2!1svi!2s" style={{  width: '100%', height: 650, border: 0 }}></iframe>
 
       </div>
     )
