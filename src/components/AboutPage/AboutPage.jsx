@@ -6,11 +6,20 @@ import Bg3 from  './../../images/bg_3.jpg';
 import OurClientsSay from '../OurClientsSay/OurClientsSay';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
+// import BlogDetail
+// import ContactPage
+import ContactPage from '../ContactPage/ContactPage';
+// import ConCac
+import ConCac from '../ConCac/ConCac';
+
+
+
 class AboutPage extends Component {
   render() {
     return(
       <div>
-      {/* <section className="hero-wrap hero-wrap-2"> */}
+			{/* <section className="hero-wrap hero-wrap-2"> */}
+			<ConCac />
 
         <section className="hero-wrap hero-wrap-2" style={{ backgroundImage: "url(" + Bg1 + ")" }}>
       <div className="overlay"></div>

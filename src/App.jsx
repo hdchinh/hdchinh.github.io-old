@@ -18,6 +18,7 @@ import ServicesPage from './components/ServicesPage/ServicesPage';
 import BlogsPage from './components/BlogsPage/BlogsPage';
 import ContactPage from './components/ContactPage/ContactPage';
 // import Menu from 'components/Menu/Menu';
+import ConCac from './components/ConCac/ConCac';
 
 class App extends React.Component {
   render() {
@@ -25,22 +26,13 @@ class App extends React.Component {
       <Router>
         <Switch>
           <LandingPageRoute exact path='/' component={HomePage} />
-          {/* <Route path='/home'>
-            <Menu />
-            <HomePage />
-          </Route>
-
-          <Route path='/projects'>
-            <Menu />
-            <ProjectsPage />
-          </Route> */}
-
           <LandingPageRoute path='/home' component={HomePage} />
           <LandingPageRoute path='/about' component={AboutPage} />
           <LandingPageRoute path='/projects' component={ProjectsPage} />
           <LandingPageRoute path='/services' component={ServicesPage} />
-          <LandingPageRoute path='/blog' component={BlogsPage} />
+          <LandingPageRoute exact path='/blog' component={BlogsPage} />
           <LandingPageRoute path='/contact' component={ContactPage} />
+          <LandingPageRoute path='/blog/:id' component={ConCac} />
         </Switch>
       </Router>
     );
