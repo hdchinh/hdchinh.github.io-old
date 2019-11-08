@@ -22,27 +22,27 @@ class Menu extends Component {
 	      <div className="collapse navbar-collapse" id="ftco-nav">
 	        <ul className="navbar-nav mr-auto">
             <li className={window.location.pathname.includes('/home') ? 'nav-item active' : 'nav-item'}>
-              <a href='/home' className="nav-link"> Home</a>
+              <a href='/home' className="nav-link"> HOME</a>
             </li>
 
             <li className={window.location.pathname.includes('/about') ? 'nav-item active' : 'nav-item'}>
-              <a href='/about' className="nav-link"> About</a>
+              <a href='/about' className="nav-link"> ABOUT</a>
             </li>
 
             <li className={window.location.pathname.includes('/projects') ? 'nav-item active' : 'nav-item'}>
-              <a href='/projects' className="nav-link"> Projects</a>
+              <a href='/projects' className="nav-link"> PORTFOLIO</a>
             </li>
 
             <li className={window.location.pathname.includes('/services') ? 'nav-item active' : 'nav-item'}>
-              <a href='/services' className="nav-link"> Services</a>
+              <a href='/services' className="nav-link"> SERVICES</a>
             </li>
 
             <li className={window.location.pathname.includes('/blog') ? 'nav-item active' : 'nav-item'}>
-              <a href='/blog' className="nav-link"> Blog</a>
+              <a href='/blog' className="nav-link"> BLOGS</a>
             </li>
 
             <li className={window.location.pathname.includes('/contact') ? 'nav-item active' : 'nav-item'}>
-              <a href='/contact' className="nav-link"> Contact</a>
+              <a href='/contact' className="nav-link"> CONTACT</a>
             </li>
 	        </ul>
 	      </div>
