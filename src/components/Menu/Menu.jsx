@@ -21,7 +21,7 @@ class Menu extends Component {
         </form> */}
 	      <div className="collapse navbar-collapse" id="ftco-nav">
 	        <ul className="navbar-nav mr-auto">
-            <li className={window.location.pathname.includes('/home') ? 'nav-item active' : 'nav-item'}>
+            <li className={(window.location.pathname.includes('/home') || window.location.pathname == '/') ? 'nav-item active' : 'nav-item'}>
               <a href='/home' className="nav-link"> HOME</a>
             </li>
 
