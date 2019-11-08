@@ -1,19 +1,12 @@
 import React, { Component } from 'react';
 import Bg1 from  './../../images/bg_1.jpg';
-// import About from './../../images/about.jpg';
-// import Project1 from './../../images/project-2.jpg';
-// import Person1 from './../../images/person_1.jpg';
-// import OurClientsSay from '../OurClientsSay/OurClientsSay';
 import Image1 from './../../images/image_2.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
-// import ServicesPage from './ServicesPage';
-import myData from './data.json';
 
 class BlogsPage extends Component {
 
   renderBlogs = () => {
-    console.log('myData is:....', myData);
     const items = ['1', '2', '3'].map((item, index) => {
       return(
      <div className="col-md-6 col-lg-4 ftco-animate" key={index}>

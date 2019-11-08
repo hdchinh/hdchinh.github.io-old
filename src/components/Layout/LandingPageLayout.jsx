@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Header from '../Header/Header';
 import Menu from '../Menu/Menu';
-// import { Route, Redirect } from 'react-router-dom';
 import Footer from '../Footer/Footer';
 
 class LandingPageLayout extends Component {
