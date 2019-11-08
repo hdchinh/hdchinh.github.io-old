@@ -66,10 +66,10 @@ class ProjectsPage extends Component {
 							<div class="col-md-4">
 								<div class="project mb-4 img ftco-animate d-flex justify-content-center align-items-center" style={{ backgroundImage: "url(" + Project1 + ")" }}>
 									<div class="overlay"></div>
-									<span style={{ cursor: 'pointer', backgroundColor: 'white' }} class="btn-site d-flex align-items-center justify-content-center" onClick={() => this.setState({ isOpen: true })}>
-										<FontAwesomeIcon icon={faArrowRight} size="lg" style={{ color: 'black' }} /></span>
+									{/* <span style={{ cursor: 'pointer', backgroundColor: 'white' }} class="btn-site d-flex align-items-center justify-content-center" >
+										<FontAwesomeIcon icon={faArrowRight} size="lg" style={{ color: 'black' }} /></span> */}
 									<div class="text text-center p-4">
-										<h3><a href="#">Branding &amp; Illustration Design</a></h3>
+										<h3><a onClick={() => this.setState({ isOpen: true })} style={{ cursor: 'pointer' }}>Branding &amp; Illustration Design</a></h3>
 										<span>Web Design</span>
 									</div>
 								</div>
