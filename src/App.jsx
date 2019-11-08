@@ -18,7 +18,7 @@ import ServicesPage from './components/ServicesPage/ServicesPage';
 import BlogsPage from './components/BlogsPage/BlogsPage';
 import ContactPage from './components/ContactPage/ContactPage';
 // import Menu from 'components/Menu/Menu';
-import ConCac from './components/ConCac/ConCac';
+import NotFound from './components/NotFound/NotFound';
 
 class App extends React.Component {
   render() {
@@ -32,7 +32,8 @@ class App extends React.Component {
           <LandingPageRoute path='/services' component={ServicesPage} />
           <LandingPageRoute exact path='/blog' component={BlogsPage} />
           <LandingPageRoute path='/contact' component={ContactPage} />
-          <LandingPageRoute path='/blog/:id' component={ConCac} />
+          {/* <LandingPageRoute path='/blog/:id' component={ConCac} /> */}
+          <Route path="*"  exact component={NotFound} />
         </Switch>
       </Router>
     );
