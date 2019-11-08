@@ -8,7 +8,7 @@ const input = '# This is a header\n\nAnd this is a paragraph'
 class ConCac extends React.Component {
   componentDidMount(){
     ReactDOM.render(<ReactMarkdown source={input} />, document.getElementById('container'))
-    console.log('this....', this.props.match.params)
+    // console.log('this....', this.props.match.params)
   }
   render() {
     return(
